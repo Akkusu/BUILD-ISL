@@ -1,7 +1,7 @@
 echo "[Step 1.5] Build ISL..."
   cd ${DOWNLOADDIR}
   if [ ! -f isl-${ISL_VERSION}.tar.xz ]; then
-	curl -L -O http://isl.gforge.inria.fr/isl-${ISL_VERSION}.tar.xz
+	curl -L -O http://ftp.slackware.com/pub/slackware/slackware64-current/source/l/isl/-${ISL_VERSION}.tar.xz
   fi
   tar xJf isl-${ISL_VERSION}.tar.xz -C ${SRCDIR}
   rm -rf ${BUILDDIR}/isl-${ISL_VERSION}
